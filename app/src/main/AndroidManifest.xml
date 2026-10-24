@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <!-- Fix for Fbns RemoteException: Enable package visibility for Facebook services -->
+    <queries>
+        <package android:name="com.facebook.katana" />
+        <package android:name="com.facebook.orca" />
+        <package android:name="com.facebook.wakizashi" />
+        <package android:name="com.facebook.mlite" />
+        <intent>
+            <action android:name="com.facebook.receiver.FBNS" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/Theme.CivicEyeAI"
+        tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_api_key" />
+
+        <!-- Disable FB auto-init to reduce AIDL binding noise -->
+        <meta-data android:name="com.facebook.sdk.AutoInitEnabled" android:value="false"/>
+        <meta-data android:name="com.facebook.sdk.AutoLogAppEventsEnabled" android:value="false"/>
+
+        <activity android:name=".activities.SplashScreenActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.OnboardingActivity" android:exported="false"/>
+        <activity android:name=".activities.LoginActivity" android:exported="false"/>
+        <activity android:name=".activities.RegisterActivity" android:exported="false"/>
+        <activity android:name=".activities.HomeActivity" android:exported="false"/>
+        <activity android:name=".activities.CaptureActivity" android:exported="false"/>
+        <activity android:name=".activities.AiAnalyzingActivity" android:exported="false"/>
+        <activity android:name=".activities.PreviewActivity" android:exported="false"/>
+        <activity android:name=".activities.SuccessActivity" android:exported="false"/>
+        <activity android:name=".activities.MyComplaintsActivity" android:exported="false"/>
+        <activity android:name=".activities.MapsActivity" android:exported="false"/>
+        <activity android:name=".activities.ProfileActivity" android:exported="false"/>
+        <activity android:name=".activities.UpdatesActivity" android:exported="false"/>
+        <activity android:name=".activities.StatisticsActivity" android:exported="false"/>
+        <activity android:name=".activities.HowItWorksActivity" android:exported="false"/>
+        <activity android:name=".activities.ComplaintDetailActivity" android:exported="false"/>
+
+    </application>
+
+</manifest>

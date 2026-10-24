@@ -1,0 +1,82 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="40dp" android:text="🎉" android:textSize="40sp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" android:text="Complaint Submitted!"
+            android:textColor="@color/text_dark" android:textSize="22sp" android:textStyle="bold"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" android:gravity="center"
+            android:text="Your report has been recorded and\nsent to the relevant department."
+            android:textColor="@color/text_muted" android:textSize="14sp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="26dp" android:background="@drawable/bg_input"
+            android:orientation="vertical" android:gravity="center" android:padding="16dp">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Complaint ID" android:textColor="@color/text_muted" android:textSize="12sp"/>
+
+            <TextView android:id="@+id/tvComplaintId" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="2dp" android:text="CEA-2024-001"
+                android:textColor="@color/text_dark" android:textSize="18sp" android:textStyle="bold"/>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:layout_marginVertical="12dp" android:background="#E5E7EB"/>
+
+            <TextView android:id="@+id/tvOfficial" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Official: Notifying..." android:textColor="@color/text_dark" android:textSize="14sp"/>
+
+            <TextView android:id="@+id/tvEmailStatus" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="4dp" android:text="Email status: -" android:textColor="@color/text_muted" android:textSize="13sp"/>
+
+        </LinearLayout>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="24dp" android:text="Contact Authority Directly"
+            android:textColor="@color/text_dark" android:textSize="15sp" android:textStyle="bold"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:orientation="horizontal">
+
+            <Button android:id="@+id/btnCall" android:layout_width="0dp" android:layout_height="48dp"
+                android:layout_weight="1" android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_input" android:text="📞 Call"
+                android:textAllCaps="false" android:textColor="@color/text_dark"/>
+
+            <Button android:id="@+id/btnEmail" android:layout_width="0dp" android:layout_height="48dp"
+                android:layout_weight="1" android:layout_marginStart="8dp"
+                android:background="@drawable/bg_input" android:text="✉️ Email"
+                android:textAllCaps="false" android:textColor="@color/text_dark"/>
+
+        </LinearLayout>
+
+        <Button android:id="@+id/btnSearchOfficial" android:layout_width="match_parent" android:layout_height="48dp"
+            android:layout_marginTop="12dp" android:background="@drawable/bg_input"
+            android:text="🔍 Search Local Official Info" android:textAllCaps="false"
+            android:textColor="@color/primary" android:textStyle="bold"/>
+
+        <Button android:id="@+id/btnTrack" android:layout_width="match_parent" android:layout_height="52dp"
+            android:layout_marginTop="30dp" android:background="@drawable/bg_button_green"
+            android:text="Track Status" android:textAllCaps="false"
+            android:textColor="@color/white" android:textSize="16sp" android:textStyle="bold"/>
+
+        <TextView android:id="@+id/tvGoHome" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:padding="12dp" android:text="Back to Home"
+            android:textColor="@color/primary" android:textSize="14sp" android:textStyle="bold"/>
+
+    </LinearLayout>
+</ScrollView>

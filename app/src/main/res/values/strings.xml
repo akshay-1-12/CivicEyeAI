@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">CivicEye AI</string>
+    <string name="google_maps_api_key">YOUR_GOOGLE_MAPS_API_KEY</string>
+
+    <!-- Home Screen Strings -->
+    <string name="hello_user">Hello, %1$s 👋</string>
+    <string name="citizen_dashboard">Citizen Dashboard</string>
+    <string name="admin_dashboard">Official Admin Dashboard</string>
+
+    <!-- Citizen Section -->
+    <string name="report_title">Report a Civic Issue</string>
+    <string name="report_desc">Snap a photo and let AI\nroute it to officials.</string>
+    <string name="my_history">My History</string>
+    <string name="track_reports">Track your reports</string>
+    <string name="learn_more">Learn More</string>
+    <string name="process_workflow">Process workflow</string>
+
+    <!-- Admin Section -->
+    <string name="control_center">Control Center</string>
+    <string name="manage_reports_desc">Manage all incoming reports</string>
+    <string name="management_tools">Management Tools</string>
+    <string name="analytics">Analytics</string>
+    <string name="city_analytics_desc">City issue trends</string>
+    <string name="departments">Departments</string>
+    <string name="official_directory">Official directory</string>
+
+    <!-- Titles -->
+    <string name="all_reports_title">All City Reports</string>
+    <string name="my_complaints_title">My Complaints</string>
+
+    <!-- Common Section -->
+    <string name="community_map">Community Map</string>
+    <string name="live_heatmap">Live Heatmap</string>
+    <string name="view_issues_desc">View issues in your area</string>
+
+    <!-- Complaint Detail Strings -->
+    <string name="complaint_details">Complaint Details</string>
+    <string name="complaint_code_format">#%1$s</string>
+    <string name="status_updated_msg">Status updated to %1$s</string>
+    <string name="update_failed">Update failed</string>
+    <string name="network_error">Network Error</string>
+    <string name="error_loading_details">Error loading complaint details</string>
+
+</resources>

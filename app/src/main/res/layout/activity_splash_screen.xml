@@ -1,0 +1,31 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bg_splash_gradient">
+
+    <ImageView android:id="@+id/ivLogo" android:layout_width="110dp" android:layout_height="110dp"
+        android:background="@drawable/bg_logo_circle_white"
+        android:padding="24dp" android:src="@drawable/ic_leaf"
+        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38"/>
+
+    <TextView android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" android:text="CivicEye AI" android:textColor="@color/primary_dark"
+        android:textSize="34sp" android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivLogo"/>
+
+    <TextView android:id="@+id/tvTag1" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" android:text="One photo. One complaint."
+        android:textColor="@color/text_dark" android:textSize="16sp" android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"/>
+
+    <TextView android:id="@+id/tvTag2" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" android:text="Automatically routed to the\nresponsible officials."
+        android:gravity="center" android:textColor="@color/text_muted" android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTag1"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

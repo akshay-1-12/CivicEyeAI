@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#2E7D32</color>
+    <color name="primary_dark">#1B5E20</color>
+    <color name="primary_light">#4CAF50</color>
+    <color name="accent">#66BB6A</color>
+    <color name="screen_bg">#F4FAF5</color>
+    <color name="card_white">#FFFFFF</color>
+    <color name="dark_green">#0E3B2E</color>
+
+    <color name="textDark">#1F2937</color>
+    <color name="textMuted">#6B7280</color>
+    <color name="text_dark">#1F2937</color>
+    <color name="text_muted">#6B7280</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="light_green_bg">#E8F5E9</color>
+    <color name="chip_bg">#EEF2EE</color>
+    <color name="status_orange">#F59E0B</color>
+    <color name="status_red">#EF4444</color>
+    <color name="nav_unselected">#9AA0A6</color>
+
+    <!-- Missing colors fixed below -->
+    <color name="buttonGradientStart">#2E7D32</color>
+    <color name="buttonGradientEnd">#1B5E20</color>
+    <color name="authGradientStart">#2E7D32</color>
+    <color name="authGradientCenter">#4CAF50</color>
+    <color name="authGradientEnd">#0E3B2E</color>
+    <color name="cardBackground">#FFFFFF</color>
+    <color name="pendingBackground">#FFF3E0</color>
+    <color name="pendingText">#E65100</color>
+    <color name="inputIcon">#6B7280</color>
+    <color name="bottom_nav_color">#2E7D32</color>
+</resources>
